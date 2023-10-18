@@ -11,7 +11,7 @@ DotNetEnv.Env.Load(dotenv);
 
 var builder = WebApplication.CreateBuilder(args);
 var CorsConfig = "_corsConfig";
-var connectionStringConfig = builder.Configuration.GetSection("ConnectionString").Get<ConnectionStringConfig>();
+var connectionStringConfig = builder.Configuration.GetSection("ConnectionStrings").Get<ConnectionStringConfig>();
 
 builder.Services.RegisterApplication();
 builder.Services.RegisterInfrastructure(connectionStringConfig.Database);

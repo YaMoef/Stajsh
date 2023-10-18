@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-public class TemplateController: ApiV1Controller
+public class BinaryController: ApiV1Controller
 {
     private readonly IMediator _mediator;
-    public TemplateController(IMediator mediator)
+    public BinaryController(IMediator mediator)
     {
         _mediator = mediator;
     }
