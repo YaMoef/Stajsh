@@ -15,3 +15,5 @@ Simple tool that fetches Node.JS binaries and stores them to be less dependend f
 
 - [ ] Add API-key authentication
 - [ ] API-key management
+- [ ] Support checksum etc.
+- [ ] Support codenames
