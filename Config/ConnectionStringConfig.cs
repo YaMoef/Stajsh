@@ -1,6 +1,6 @@
 ﻿namespace Config;
 
-public class ConnectionStringConfig
+public sealed class ConnectionStringConfig
 {
-    public string Database { get; set; }
+    public required string Database { get; set; }
 }

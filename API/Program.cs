@@ -14,7 +14,7 @@ var CorsConfig = "_corsConfig";
 var connectionStringConfig = builder.Configuration.GetSection("ConnectionStrings").Get<ConnectionStringConfig>();
 
 builder.Services.RegisterApplication();
-builder.Services.RegisterInfrastructure(connectionStringConfig.Database);
+builder.Services.RegisterInfrastructure(builder.Configuration, connectionStringConfig.Database);
 builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

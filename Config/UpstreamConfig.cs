@@ -1,8 +1,8 @@
 namespace Config;
 
-public class UpstreamConfig
+public sealed class UpstreamConfig
 {
-    public int AmountRetries { get; set; }
+    public required int AmountRetries { get; set; }
 
-    public string UpstreamBaseUri { get; set; }
+    public required string UpstreamBaseUri { get; set; }
 }
